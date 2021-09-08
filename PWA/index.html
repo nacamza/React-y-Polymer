@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>PWA</title>
+    <meta name="description" content="Aplicación de prueba con Polymer">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#0B3D91">
+    <link rel="apple-touch-icon" href="/assets/icon_512.png">
+
+    <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module" src="/src/Pwa-app/Pwa-app.js" crossorigin></script>
+
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <script>
+      // Feature detect for service worker capability in the browser
+      if ('serviceWorker' in navigator) {
+        // Delay registering until page load
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('service-worker.js');
+        });
+      }
+    </script>
+
+  </head>
+  <body>
+  <noscript>No puedes ver los contenidos sin activar JavaScript</noscript>
+    <pwa-app></pwa-app>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "PWA",
+  "short_name": "PWA",
+  "description": "Aplicación de prueba con Polymer",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/icons_48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/icons_96.png",
+      "type": "image/png",
+      "sizes": "968x96"
+    },
+    {
+      "src": "assets/icons_192.png",
+      "type": "image/png",
+      "sizes": "19x19"
+    },
+    {
+      "src": "assets/icons_256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "assets/icons_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#0B3D91",
+  "background_color": "#0B3D91"
+}
